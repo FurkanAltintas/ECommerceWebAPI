@@ -1,4 +1,14 @@
+using DataAccess.Abstract;
+using DataAccess.Concrete.Contexts;
+using DataAccess.Concrete.EntityFramework;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<ECommerceProjectWithWebAPIContext>();
+
+builder.Services.AddTransient<IUserDal, EfUserDal>();
 
 // Add services to the container.
 
