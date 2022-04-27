@@ -17,7 +17,7 @@ namespace DataAccess.Concrete.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-C8S1J58; Initial Catalog = ECommerceProjectWithWebAPIDb; Integrated Security = True;");
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-C8S1J58; Initial Catalog=ECommerceProjectWithWebAPIDb; Integrated Security=True;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
