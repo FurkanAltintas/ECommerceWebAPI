@@ -20,6 +20,8 @@ namespace DataAccess.Concrete.EntityFramework.Mapping
 
             builder.Property(u => u.Password).HasColumnName("Password").HasMaxLength(20).IsRequired();
 
+            builder.Property(u => u.PhoneNumber).HasColumnName("PhoneNumber").HasMaxLength(20).IsRequired();
+
             builder.Property(u => u.Gender).HasColumnName("Gender").IsRequired();
 
             builder.Property(u => u.DateOfBirth).HasColumnName("DateOfBirth").IsRequired();
@@ -38,6 +40,7 @@ namespace DataAccess.Concrete.EntityFramework.Mapping
                 Address = "İstanbul/Pendik",
                 Email = "furkanaltintas785@gmail.com",
                 UserName = "furkanaltintas",
+                PhoneNumber = "+90 555 555 55 55",
                 CreatedUserId = 1,
                 UpdatedUserId = 1,
                 UpdatedDate = DateTime.Now
