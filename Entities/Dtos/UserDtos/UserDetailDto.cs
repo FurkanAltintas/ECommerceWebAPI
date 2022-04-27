@@ -1,4 +1,4 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities.Abstract;
 
 namespace Entities.Dtos.UserDtos
 {
@@ -13,5 +13,6 @@ namespace Entities.Dtos.UserDtos
         public string Gender { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string Address { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }

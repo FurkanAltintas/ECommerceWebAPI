@@ -1,4 +1,4 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities.Abstract;
 
 namespace Entities.Dtos.UserDtos
 {
@@ -13,5 +13,10 @@ namespace Entities.Dtos.UserDtos
         public bool Gender { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string Address { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Token { get; set; }
+        public DateTime? TokenExpireDate { get; set; }
+        public int UpdateUserId { get; set; }
+        public DateTime UpdateDate { get; set; } = DateTime.Now;
     }
 }
